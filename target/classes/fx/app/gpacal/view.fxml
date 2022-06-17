@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.app.gpacal.Controller">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="45.0" layoutY="6.0" prefHeight="17.0" prefWidth="497.0" text="GPA CALCULATOR">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="64.0" prefHeight="17.0" prefWidth="78.0" text="GPA:" />
+      <TextField fx:id="gpaTxtField" editable="false" focusTraversable="false" layoutX="273.0" layoutY="49.0" prefHeight="43.0" prefWidth="78.0" promptText="0.00">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></TextField>
+      <TextField fx:id="courseTxt1" focusTraversable="false" layoutX="14.0" layoutY="105.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 1" />
+      <TextField fx:id="courseTxt2" focusTraversable="false" layoutX="14.0" layoutY="150.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 2" />
+      <TextField fx:id="courseTxt3" focusTraversable="false" layoutX="14.0" layoutY="195.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 3" />
+      <TextField fx:id="courseTxt4" focusTraversable="false" layoutX="14.0" layoutY="235.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 4" />
+      <TextField fx:id="courseTxt5" focusTraversable="false" layoutX="14.0" layoutY="275.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 5" />
+      <TextField fx:id="courseTxt6" focusTraversable="false" layoutX="14.0" layoutY="315.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 6" />
+      <TextField fx:id="courseTxt7" focusTraversable="false" layoutX="14.0" layoutY="360.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 7" />
+      <TextField fx:id="courseTxt8" focusTraversable="false" layoutX="14.0" layoutY="405.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 8" />
+      <TextField fx:id="courseTxt9" focusTraversable="false" layoutX="14.0" layoutY="450.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 9" />
+      <TextField fx:id="courseTxt10" focusTraversable="false" layoutX="14.0" layoutY="495.0" prefHeight="25.0" prefWidth="222.0" promptText="Course 10" />
+      <Button fx:id="btnCalc" layoutX="159.0" layoutY="540.0" mnemonicParsing="false" onAction="#calcGPA" prefHeight="36.0" prefWidth="120.0" style="-fx-background-color: GREEN;" text="CALCULATE" textFill="WHITE" />
+      <Button fx:id="btnClear" layoutX="312.0" layoutY="540.0" mnemonicParsing="false" onAction="#clearField" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: RED;" text="CLEAR" textFill="WHITE" />
+      <ComboBox fx:id="cbx1" layoutX="255.0" layoutY="105.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbx2" layoutX="255.0" layoutY="150.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbx3" layoutX="255.0" layoutY="195.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG3" layoutX="430.0" layoutY="195.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx4" layoutX="255.0" layoutY="235.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG4" layoutX="430.0" layoutY="235.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx5" layoutX="255.0" layoutY="275.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG5" layoutX="430.0" layoutY="275.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx6" layoutX="255.0" layoutY="315.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG6" layoutX="430.0" layoutY="315.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx7" layoutX="255.0" layoutY="360.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG7" layoutX="430.0" layoutY="360.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx8" layoutX="255.0" layoutY="405.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG8" layoutX="430.0" layoutY="405.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx9" layoutX="255.0" layoutY="450.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG9" layoutX="430.0" layoutY="450.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbx10" layoutX="255.0" layoutY="495.0" prefWidth="150.0" promptText="Credit Hours" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG10" layoutX="430.0" layoutY="495.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <Label alignment="TOP_CENTER" layoutX="228.0" layoutY="595.0" prefHeight="17.0" prefWidth="168.0" text="Developed by Bernardo" textFill="#bfb4b4">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbxG2" layoutX="430.0" layoutY="150.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+      <ComboBox fx:id="cbxG1" layoutX="430.0" layoutY="105.0" prefWidth="150.0" promptText="Grade" visibleRowCount="6" />
+   </children>
+</AnchorPane>
